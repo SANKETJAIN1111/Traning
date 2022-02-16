@@ -1,0 +1,10 @@
+<p>data-bind works!</p>
+<div>
+    <span >Event Binding : '{{username}}' '{{lastname}}'</span><hr/>
+    <input type="text" autocomplete="off" #un/>
+    <button (click) = handleChange(un.value)>Update Name</button>
+    <div> Toggle Button : {{toggleButton}}</div>
+    <div [hidden] = 'toggleButton'>Button Not Disabled</div>
+    <input type="text" autocomplete="off" #ln/>
+    <button [disabled] = 'toggleButton' (click) = disableButton(ln.value)>Disabled Button</button>
+</div>

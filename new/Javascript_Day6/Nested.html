@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+    <h1>Understanding ES6, ES7, ES8 and latest Javascript features!</h1>
+    <hr/>
+    <script type = 'text/javascript'>
+    // state & city are nested properties of object
+      var users = [
+          {name : "Alex", age : 30, address : {state: "KA", city: "BLR"}},
+          {name : "Bruce", age : 40},
+          {name : "Charles", age : 35, address : {state: "AP", city: "NLR"}},
+      ];
+      for(var v = 0; v < users.length; v++) {
+        let user = users[v];
+        let address = users[v]?.address;
+        document.write(`<p>Name: ${user.name}, Age: ${user.age}, `);
+        document.write(`State: ${address?.state}, City: ${address?.city}</p>`);
+      }
+    </script>
+</body>
+</html>

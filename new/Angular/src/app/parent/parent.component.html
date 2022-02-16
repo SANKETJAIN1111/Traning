@@ -1,0 +1,10 @@
+<p>parent works!</p>
+<div>
+    <app-child [username]= 'firstname'></app-child>
+    <p>Total Number of Clicks: {{clicks}}</p>
+    <hr/>
+<span>Itrating the Child</span>
+    <div *ngFor='let u of users'>
+    <app-child [username] = 'u' (eventCounter)="numberOfClicks($event)"></app-child>
+    </div>
+</div>

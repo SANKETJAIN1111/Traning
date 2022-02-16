@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>JS Features</h1>
+        <hr/>
+        <script type="text/javascript">
+            // function test(){
+            //     for(var x=0;x<2;x++)
+            //     {
+            //         var y=30;
+            //         const pi=3.14;
+            //         let z=45+x;
+            //         console.log("x = " +x+ " z = "+z +" pi = "+pi);
+            //     }
+            //     console.log("y = " +y+ "\n z = "+z +"\n pi = "+pi);
+            // }
+
+            //test();
+            // function Employee(name,age){this.name = name;
+            // this.age=age;}
+            //  Employee.prototype.display = function(){document.write('<p> Name : '+this.name+ ', Age: '+this.age+'</p>');}
+            // var e=new Employee("Elena",34);
+            // e.display();
+class Employee{
+             constructor(name,age){this.name = name;
+            this.age=age;}
+           display(){document.write('<p> Name : '+this.name+ ', Age: '+this.age+'</p>');}
+            }
+
+
+class Manager extends Employee{
+    constructor(name,age, employeesReporting){
+        super(name,age);
+        this.employeesReporting = employeesReporting;
+    }
+    display(){
+        document.write('<p> Name : '+this.name+ ', Age: '+this.age+ ' employeesReporting : '+this.employeesReporting+'</p>'  );
+    }
+}
+
+            var e=new Manager("alexa ",34,6);
+            e.display();
+        </script>
+
+    </body>
+</html>

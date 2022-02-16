@@ -1,0 +1,10 @@
+// const path = require('path');
+let fs  = require('fs');
+let data = fs.readFileSync("simple.txt");
+let filepath = fs.realpathSync("simple.txt");
+let dir = fs.readdir();
+let text = "jai mata di ";
+fs.writeFileSync('msg.txt ',text,{flag:'a+'});
+console.log("DONE!");
+let content = data.toString();
+console.log( filepath.toString() +" "+ content+" " + dir.toString());

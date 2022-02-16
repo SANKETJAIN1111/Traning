@@ -1,0 +1,19 @@
+<div>
+
+ <h2 style="text-align: center;">Welcome to Angular Application</h2>
+
+ <!-- <button type='button' class="btn btn-outline-primary" >Submit</button> -->
+<div class="row g-3">
+    <div  class="col-md-4">
+        <app-parent></app-parent>
+    </div>
+    <div  class="col-md-4">
+        <div *ngFor = 'let u of users'>Name: {{u.name | uppercase | genderFormat:u.gender}} , Gender: {{u.gender}}</div>
+    </div>
+     <div  class="col-md-4"><app-employee></app-employee></div></div>
+<div class="row g-3">
+<div class="col-md-4"><app-data-bind></app-data-bind></div>
+<div class="col-md-4"><app-demo></app-demo></div>
+<div class="col-md-4"><app-hello></app-hello></div></div>
+
+</div>

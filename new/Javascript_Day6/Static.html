@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>JS Features</h1>
+        <hr/>
+        <script type="text/javascript">
+          class Test{
+              x=20;
+              static y = 30;
+              hello(){
+                  console.log('inside non-static : x ='+this.x+', y = '+this.y);
+              }
+             static welcome(){
+                  console.log('inside non-static : x ='+this.x+', y = '+this.y);
+              }
+          }
+          var t =new Test();
+          t.hello();
+          Test.welcome();
+        </script>
+
+    </body>
+</html>

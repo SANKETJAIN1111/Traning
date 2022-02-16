@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>JS Features</h1>
+        <hr/>
+        <script type="text/javascript">
+            var str = "889977";
+            var str1 = str.padStart(10,'x');
+            var str2 = str.padEnd(10,'x');
+            document.write(`<p>Start : ${str1},</p><p> End : ${str2} </p>`);
+            var rand = Math.random();
+            document.write(`<p>Random : ${rand}</p>`);
+            var trunc = Math.trunc(rand * 1000000.0);
+            document.write(`<p>Random6Digit : ${trunc}</p>`);
+            var pad = trunc.padStart(6,'0');
+            document.write(`<p>After Pad : ${pad}</p>`);
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "af5845c3-51ed-4829-afe3-fe21507f843c",
+		"name": "MysqlCRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetMethodUsingIdMysql",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9092/users"
+			},
+			"response": []
+		},
+		{
+			"name": "PostMethodUsingIdMysql",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9099/user?id=17&name=chanchal&salary=650",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9099",
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "17"
+						},
+						{
+							"key": "name",
+							"value": "chanchal"
+						},
+						{
+							"key": "salary",
+							"value": "650"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMethodUsingIdMysqlwith id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9099/user/17"
+			},
+			"response": []
+		},
+		{
+			"name": "putMethodUsingIdMysql",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:9099/user/1/sanket/12000"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteMethodUsingIdMysql",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:9099/user/5"
+			},
+			"response": []
+		}
+	]
+}
